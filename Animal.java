@@ -9,7 +9,7 @@ public class Animal {
     private String descripcionrasgos;
     private int vida;
 
-    public Animal(String nombrecientifico, String nombrecomun, String habitat, String alimentacion, String descripcionrasgos, int vida) {
+    public static Animal(String nombrecientifico, String nombrecomun, String habitat, String alimentacion, String descripcionrasgos, int vida) {
         Animal.nombrecientifico = nombrecientifico;
         Animal.nombrecomun = nombrecomun;
         Animal.habitat = habitat;
@@ -23,7 +23,7 @@ public class Animal {
     }
 
     public static void setNombrecientifico(String nombrecientifico) {
-        this.nombrecientifico = nombrecientifico;
+        Animal.nombrecientifico = nombrecientifico;
     }
 
     public String getNombrecomun() {
@@ -31,7 +31,7 @@ public class Animal {
     }
 
     public static void setNombrecomun(String nombrecomun) {
-        this.nombrecomun = nombrecomun;
+        Animal.nombrecomun = nombrecomun;
     }
 
     public static String getHabitat() {
@@ -39,7 +39,7 @@ public class Animal {
     }
 
     public static void setHabitat(String habitat) {
-        this.habitat = habitat;
+        Animal.habitat = habitat;
     }
 
     public String getAlimentacion() {
@@ -47,7 +47,7 @@ public class Animal {
     }
 
     public static void setAlimentacion(String alimentacion) {
-        this.alimentacion = alimentacion;
+        Animal.alimentacion = alimentacion;
     }
 
     public String getDescripcionrasgos() {
@@ -55,7 +55,7 @@ public class Animal {
     }
 
     public static void setDescripcionrasgos(String descripcionrasgos) {
-        this.descripcionrasgos = descripcionrasgos;
+        Animal.descripcionrasgos = descripcionrasgos;
     }
 
     public int getVida() {
@@ -63,7 +63,7 @@ public class Animal {
     }
 
     public static void setVida(int vida) {
-        this.vida = vida;
+        Animal.vida = vida;
     }
 
     @Override

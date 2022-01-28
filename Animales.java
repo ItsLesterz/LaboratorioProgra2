@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Animales {
     public static Scanner leer=new Scanner(System.in);
+    private static int vidaA;
+    private static int vidaB;
     private static boolean verificar=false;
     private static ArrayList<Animal>listaAnimales=new ArrayList<>();
 
@@ -135,8 +137,22 @@ public class Animales {
         System.out.println("Selecciones el animal que desea alimentar:");
         for(int i=0;i<listaAnimales.size();i++){
             System.out.println(i + ". " + listaAnimales.get(i).getNombrecientifico());
+            String alimentar=listaAnimales.get(i).getNombrecientifico();
         }
-        System.out.println();
+        System.out.println("Ingrese un numero del 0 al " + listaAnimales.size() + ": ");
+        int opcion=leer.nextInt();
+        for(int i=0;i<listaAnimales.size();i++){
+            if(i==opcion){
+                vidaA=listaAnimales.get(i).getVida();
+            }else{
+                System.out.println("El animal no existe");
+            }
+        }
+
+        System.out.println("Seleccione el animal a devorar");
+        for(int i=0;i<;i<listaAnimales.size();i++){
+            System.out.println(i + ". " + listaAnimales.get(i).getNombrecientifico());
+        }
     }
 
 }
