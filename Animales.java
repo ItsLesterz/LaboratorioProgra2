@@ -135,6 +135,14 @@ public class Animales {
         }
 
     }
+    public static void eliminaranimal(){
+        for(int i=0;i<listaAnimales.size();i++){
+            if(listaAnimales.get(i).getVida()<=0){
+                listaAnimales.remove(i);
+            }
+        }
+    }
+
     public static void cadenaAlimenticia(){
         System.out.println("Selecciones el animal que desea alimentar:");
         for(int i=0;i<listaAnimales.size();i++){
