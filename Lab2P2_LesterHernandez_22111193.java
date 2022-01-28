@@ -31,9 +31,13 @@ public class Lab2P2_LesterHernandez_22111193 {
                 case 5:
 
                     break;
+                default:
+                    break;
             }
 
-        }while(opcion!=5)
+        }while(opcion!=5);
+
+
     }
 
 }

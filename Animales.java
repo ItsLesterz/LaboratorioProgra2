@@ -20,8 +20,19 @@ public class Animales {
         }
     }
 
-    public static void registrarAnimal(Animal animal){
+    public static void registrarAnimal(String nombrecientifico){
         if(!verificar){
+            System.out.println("Ingrese el nombre comun del animal: ");
+            String nombrecomun=leer.nextLine();
+            System.out.println("Ingrese el habitat del animal: ");
+            String habitat=leer.nextLine();
+            System.out.println("Ingrese la alimentacion del animal: ");
+            String alimentacion=leer.nextLine();
+            System.out.println("Ingrese rasgos del animal: ");
+            String rasgos=leer.nextLine();
+            System.out.println("Ingrese la vida: ");
+            int vida=leer.nextInt();
+            Animal animal = new Animal(nombrecientifico, nombrecomun,habitat,alimentacion,rasgos,vida);
             listaAnimales.add(animal);
         }else{
             System.out.println("El animal existente!");
