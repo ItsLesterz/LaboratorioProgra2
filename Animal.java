@@ -9,20 +9,20 @@ public class Animal {
     private String descripcionrasgos;
     private int vida;
 
-    public void Animal(String nombrecientifico, String nombrecomun, String habitat, String alimentacion, String descripcionrasgos, int vida) {
-        this.nombrecientifico = nombrecientifico;
-        this.nombrecomun = nombrecomun;
-        this.habitat = habitat;
-        this.alimentacion = alimentacion;
-        this.descripcionrasgos = descripcionrasgos;
-        this.vida = vida;
+    public Animal(String nombrecientifico, String nombrecomun, String habitat, String alimentacion, String descripcionrasgos, int vida) {
+        Animal.nombrecientifico = nombrecientifico;
+        Animal.nombrecomun = nombrecomun;
+        Animal.habitat = habitat;
+        Animal.alimentacion = alimentacion;
+        Animal.descripcionrasgos = descripcionrasgos;
+        Animal.vida = vida;
     }
 
     public String getNombrecientifico() {
         return nombrecientifico;
     }
 
-    public void setNombrecientifico(String nombrecientifico) {
+    public static void setNombrecientifico(String nombrecientifico) {
         this.nombrecientifico = nombrecientifico;
     }
 
@@ -30,15 +30,15 @@ public class Animal {
         return nombrecomun;
     }
 
-    public void setNombrecomun(String nombrecomun) {
+    public static void setNombrecomun(String nombrecomun) {
         this.nombrecomun = nombrecomun;
     }
 
-    public String getHabitat() {
+    public static String getHabitat() {
         return habitat;
     }
 
-    public void setHabitat(String habitat) {
+    public static void setHabitat(String habitat) {
         this.habitat = habitat;
     }
 
@@ -46,7 +46,7 @@ public class Animal {
         return alimentacion;
     }
 
-    public void setAlimentacion(String alimentacion) {
+    public static void setAlimentacion(String alimentacion) {
         this.alimentacion = alimentacion;
     }
 
@@ -54,7 +54,7 @@ public class Animal {
         return descripcionrasgos;
     }
 
-    public void setDescripcionrasgos(String descripcionrasgos) {
+    public static void setDescripcionrasgos(String descripcionrasgos) {
         this.descripcionrasgos = descripcionrasgos;
     }
 
@@ -62,7 +62,7 @@ public class Animal {
         return vida;
     }
 
-    public void setVida(int vida) {
+    public static void setVida(int vida) {
         this.vida = vida;
     }
 
