@@ -21,4 +21,17 @@ public class Animales {
             System.out.println("El animal ya existe!");
         }
     }
+    public static void editAnimalCientifico(String nombrecientifico){
+        for (int i=0; i<listaAnimales.size();i++){
+            if (listaAnimales.get(i).getNombrecientifico().equals(nombrecientifico)){
+                System.out.print("Desea editar los datos?" +
+                        "\n (1). Editar todos los datos" +
+                        "\n(2). Editar solo un dato");
+                System.out.print("SELECCIONE UNA OPCION: ");
+                int opcion = leer.nextInt();
+            }
+        }
+
+    }
+
 }

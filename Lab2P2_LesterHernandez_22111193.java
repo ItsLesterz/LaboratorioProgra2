@@ -6,5 +6,5 @@ import java.util.ArrayList;
 
 public class Lab2P2_LesterHernandez_22111193 {
 
-    
+
 }

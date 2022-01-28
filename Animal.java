@@ -2,12 +2,12 @@ package LabProgra2;
 
 public class Animal {
     //Atributos
-    String nombrecientifico;
-    String nombrecomun;
-    String habitat;
-    String alimentacion;
-    String descripcionrasgos;
-    int vida;
+    private String nombrecientifico;
+    private String nombrecomun;
+    private String habitat;
+    private String alimentacion;
+    private String descripcionrasgos;
+    private int vida;
 
     public void Animal(String nombrecientifico, String nombrecomun, String habitat, String alimentacion, String descripcionrasgos, int vida) {
         this.nombrecientifico = nombrecientifico;
