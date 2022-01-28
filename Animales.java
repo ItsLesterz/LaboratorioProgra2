@@ -5,8 +5,10 @@ import java.util.Scanner;
 
 public class Animales {
     public static Scanner leer=new Scanner(System.in);
-    private static int vidaA;
-    private static int vidaB;
+    private static int vidaA;//Alimentar animal
+    private static int vidaD;//Devorar animal
+    public static int posicionA;
+    public static int posicionD;
     private static boolean verificar=false;
     private static ArrayList<Animal>listaAnimales=new ArrayList<>();
 
@@ -150,8 +152,27 @@ public class Animales {
         }
 
         System.out.println("Seleccione el animal a devorar");
-        for(int i=0;i<;i<listaAnimales.size();i++){
+        for(int i=0;i < listaAnimales.size();i++){
             System.out.println(i + ". " + listaAnimales.get(i).getNombrecientifico());
+        }
+        System.out.println("Ingrese un numero del 0 al" + listaAnimales.size() + ": ");
+        int opcion2=leer.nextInt();
+        for(int i=0;i<listaAnimales.size();i++){
+            if(i==opcion2){
+                vidaD=listaAnimales.get(i).getVida();
+                posicionD=i;
+            }
+        }
+        for(int i=0;i<listaAnimales.size();i++){
+            if(vidaA>vidaD){
+                if(i==posicionA){
+                    Animal.setVida(vidaA+vidaD);
+                    System.out.println("El animal "+ listaAnimales.get(i).getNombrecientifico() + " ha sido eliminado" +
+                            "ahora tiene " + listaAnimales.get(i).getVida() + "de vida");
+                }else{
+                    System.out.println("El animal a devorar no existe!");
+                }
+            }
         }
     }
 
