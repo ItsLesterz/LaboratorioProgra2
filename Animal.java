@@ -2,14 +2,14 @@ package LabProgra2;
 
 public class Animal {
     //Atributos
-    private String nombrecientifico;
-    private String nombrecomun;
-    private String habitat;
-    private String alimentacion;
-    private String descripcionrasgos;
-    private int vida;
+    private static String nombrecientifico;
+    private static String nombrecomun;
+    private static String habitat;
+    private static String alimentacion;
+    private static String descripcionrasgos;
+    private static int vida;
 
-    public static Animal(String nombrecientifico, String nombrecomun, String habitat, String alimentacion, String descripcionrasgos, int vida) {
+    public Animal(String nombrecientifico, String nombrecomun, String habitat, String alimentacion, String descripcionrasgos, int vida) {
         Animal.nombrecientifico = nombrecientifico;
         Animal.nombrecomun = nombrecomun;
         Animal.habitat = habitat;

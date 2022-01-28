@@ -177,8 +177,9 @@ public class Animales {
                     Animal.setVida(vidaA+vidaD);
                     System.out.println("El animal "+ listaAnimales.get(i).getNombrecientifico() + " ha sido eliminado" +
                             "ahora tiene " + listaAnimales.get(i).getVida() + "de vida");
+                    eliminaranimal();
                 }else{
-                    System.out.println("El animal a devorar no existe!");
+                    System.out.println("El animal a devorar es mas fuerte que el animal a alimentar");
                 }
             }
         }
