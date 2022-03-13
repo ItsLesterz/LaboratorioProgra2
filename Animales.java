@@ -27,7 +27,7 @@ public class Animales {
     public static void verify(String nombrecientifico){
         for (int i=0; i< listaAnimales.size();i++){
             if(listaAnimales.get(i).getNombrecientifico().equals(nombrecientifico)){
-                verificar=true;
+                verificar=false;
             }
         }
     }
